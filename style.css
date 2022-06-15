@@ -1,0 +1,90 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(209, 202, 193, 0.856);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.phrase{
+    margin-bottom: 20%;
+
+}
+#dayPhrase {
+    text-align: center;
+    font-size: 1cm;
+    color: rgb(0, 0, 0);
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in
+}
+
+#dayPhrase:hover {
+    font-size: 1cm;
+    text-align: center;
+    color: #39373b;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in; 
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in
+}
+.btn-actions {  
+  display: flex;
+  align-items: center;
+  justify-content: center
+    
+}
+.btn-actions button {
+    margin: auto 1em;
+    padding: 1em;
+}
+
+/* ---- */
+
+.popUp {
+    text-align: center;
+    width: 100%;
+}
+.formPopup {
+display: none;
+position: fixed;
+left: 45%;
+top: 5%;
+transform: translate(-45%, -5%);
+border: 3px solid #999999;
+z-index: 9;
+}
+
+.formContainer {
+max-width: 300px;
+padding: 20px;
+background-color: #fff;
+}
+.formContainer #phrasePopup {
+    margin: 10% auto; 
+    width: 100%;
+}
+.formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8ebf42;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.formContainer .cancel {
+background-color: #cc0000;
+}
+  

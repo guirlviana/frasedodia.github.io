@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frase do dia</title>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="phrases.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="content">
+        <div class="phrase">
+          <p id="dayPhrase" name="" onclick="getPhrase()">
+            Que tal uma frase pra hoje? (clique me)
+          </p>
+        </div>
+        <div class="btn-actions">
+          <button class="openButton" onclick="openTheForm()">Adicionar</button>
+          <button type="button" id="delete" onclick="deletePhrase()">
+            Excluir
+          </button>
+        </div>
+      </div>
+      <div class="popUp">
+        <div class="formPopup" id="popupForm">
+          <div class="formContainer">
+            <h2>Qual a sua frase do dia?</h2>
+            <input
+              type="text"
+              id="phrasePopup"
+              placeholder="Frase"
+              name="phrasePopup"
+              required
+            />
+
+            <button type="button" class="btn" onclick="addOne()">
+              Adicionar
+            </button>
+            <button type="button" class="btn cancel" onclick="closeTheForm()">
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
